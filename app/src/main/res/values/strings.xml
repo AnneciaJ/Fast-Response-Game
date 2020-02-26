@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Fast Response Game</string>
+
+    <string name="main_act_score">Your score : \n <b>%1$d / 10</b></string>
+    <string name="main_act_retry">Retry</string>
+    <string name="dialog_main_str">Select the Colour of the Arrows</string>
+
+    <string name="game_act_countdown">3</string>
+    <string name="game_act_current_round">Current Round : %1$d</string>
+    <string name="game_act_current_score">Current Score : %1$d</string>
+
+    <string name="arrow_colour_blue">Blue</string>
+    <string name="arrow_colour_red">Red</string>
+    <string name="arrow_colour_green">Green</string>
+    <string name="arrow_colour_purple">Purple</string>
+</resources>

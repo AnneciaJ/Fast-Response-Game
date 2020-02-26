@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="@string/dialog_main_str"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivArrowBlue"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:tint="@color/arrowBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_game_arrow" />
+
+
+    <ImageView
+        android:id="@+id/ivArrowRed"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:tint="@color/arrowRed"
+        android:rotation="90"
+        app:layout_constraintStart_toEndOf="@+id/ivArrowBlue"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_game_arrow" />
+
+    <ImageView
+        android:id="@+id/ivArrowGreen"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:tint="@color/arrowGreen"
+        android:rotation="180"
+        app:layout_constraintStart_toEndOf="@+id/ivArrowRed"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_game_arrow" />
+
+
+    <ImageView
+        android:id="@+id/ivArrowPurple"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:tint="@color/arrowPurple"
+        android:rotation="270"
+        app:layout_constraintStart_toEndOf="@+id/ivArrowGreen"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_game_arrow" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivArrowBlue"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
